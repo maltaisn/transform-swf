@@ -36,13 +36,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.flagstone.transform.coder.Coder;
-import com.flagstone.transform.coder.Context;
-import com.flagstone.transform.coder.Copyable;
-import com.flagstone.transform.coder.SWFDecoder;
-import com.flagstone.transform.coder.SWFEncodeable;
-import com.flagstone.transform.coder.SWFEncoder;
-import com.flagstone.transform.coder.SWFFactory;
+import com.flagstone.transform.MovieTypes;
+import com.flagstone.transform.coder.*;
 
 /**
  * Shape is a container class for the shape objects (Line, Curve, ShapeStyle
@@ -81,6 +76,8 @@ public final class Shape implements SWFEncodeable, Copyable<Shape> {
         final ByteArrayInputStream stream = new ByteArrayInputStream(data);
         final SWFDecoder coder = new SWFDecoder(stream);
         final Context context = new Context();
+        context.setRegistry(DecoderRegistry.getDefault());
+        context.put(Context.TYPE, MovieTypes.DEFINE_SHAPE);
         return new Shape(coder, context);
     }
 
