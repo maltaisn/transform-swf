@@ -488,6 +488,9 @@ public final class SWFDecoder {
      * input stream.
      */
     public String readString(final int length) throws IOException {
+        if (length == 0) {
+            return "";
+        }
         final byte[] bytes = new byte[length];
         readBytes(bytes);
         int len;
