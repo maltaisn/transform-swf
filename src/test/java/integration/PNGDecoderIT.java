@@ -63,7 +63,7 @@ public final class PNGDecoderIT {
 
         final File srcDir = new File("src/test/resources/png-reference");
         final File destDir = new File(
-                "target/integration-results/PNGDecoderIT");
+                "build/integration-results/PNGDecoderIT");
 
         if (!destDir.exists() && !destDir.mkdirs()) {
             fail();

@@ -63,7 +63,7 @@ public final class MovieWriterIT {
         }
 
         final File destDir = new File(
-                "target/integration-results/MovieWriterIT");
+                "build/integration-results/MovieWriterIT");
 
         if (!destDir.exists() && !destDir.mkdirs()) {
             fail();

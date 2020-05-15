@@ -70,7 +70,7 @@ public final class AWTDecoderIT {
     public static Collection<Object[]> files() {
 
         final File destDir = new File(
-                "target/integration-results/AWTDecoderIT");
+                "build/integration-results/AWTDecoderIT");
 
         if (!destDir.exists() && !destDir.mkdirs()) {
             fail();

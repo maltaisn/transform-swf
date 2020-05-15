@@ -64,7 +64,7 @@ public final class JPGDecoderIT {
         final File srcDir = new File(
                 "src/test/resources/jpg-reference");
         final File destDir = new File(
-                "target/integration-results/JPGDecoderIT");
+                "build/integration-results/JPGDecoderIT");
 
         if (!destDir.exists() && !destDir.mkdirs()) {
             fail();

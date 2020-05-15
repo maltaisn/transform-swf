@@ -67,7 +67,7 @@ public final class BufferedImageBMPDecoderIT {
         final File srcDir =
             new File("src/test/resources/bmp-reference");
         final File destDir =
-            new File("target/integration-results/BufferedImage");
+            new File("build/integration-results/BufferedImage");
 
         if (!destDir.exists() && !destDir.mkdirs()) {
             fail();

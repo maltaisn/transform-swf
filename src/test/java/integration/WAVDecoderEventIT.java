@@ -68,7 +68,7 @@ public final class WAVDecoderEventIT {
 
         final File srcDir = new File("src/test/resources/wav-reference");
         final File destDir = new File(
-                "target/integration-results/WAVDecoderEventIT");
+                "build/integration-results/WAVDecoderEventIT");
 
         if (!destDir.exists() && !destDir.mkdirs()) {
             fail();

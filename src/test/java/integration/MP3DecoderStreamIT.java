@@ -67,7 +67,7 @@ public final class MP3DecoderStreamIT {
 
         final File srcDir = new File("src/test/resources/mp3-reference");
         final File destDir =
-            new File("target/integration-results/MP3DecoderStreamIT");
+            new File("build/integration-results/MP3DecoderStreamIT");
 
         if (!destDir.exists() && !destDir.mkdirs()) {
             fail();

@@ -73,7 +73,7 @@ public final class ScreenVideoIT {
 
         final File sourceDir = new File("src/test/resources/png-screenshots");
         final File destDir = new File(
-                "target/integration-results/ScreenVideoIT");
+                "build/integration-results/ScreenVideoIT");
 
         if (!destDir.exists() && !destDir.mkdirs()) {
             fail();

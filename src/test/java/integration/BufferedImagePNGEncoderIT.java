@@ -61,7 +61,7 @@ public final class BufferedImagePNGEncoderIT {
         final File srcDir =
             new File("src/test/resources/png-reference");
         final File destDir =
-            new File("target/integration-results/PNGEncoder");
+            new File("build/integration-results/PNGEncoder");
 
         if (!destDir.exists() && !destDir.mkdirs()) {
             fail();

@@ -64,7 +64,7 @@ public final class MovieEncodeIT {
         }
 
         final File destDir = new File(
-                "target/integration-results/MovieEncodeIT");
+                "build/integration-results/MovieEncodeIT");
 
         if (!destDir.exists() && !destDir.mkdirs()) {
             fail();

@@ -69,7 +69,7 @@ public final class SWFFontDecoderIT {
 
         final File srcDir = new File("src/test/resources/swf-font-reference");
         final File destDir = new File(
-                "target/integration-results/SWFFontDecoderIT");
+                "build/integration-results/SWFFontDecoderIT");
 
         if (!destDir.exists() && !destDir.mkdirs()) {
             fail();

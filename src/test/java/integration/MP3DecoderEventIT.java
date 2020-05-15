@@ -69,7 +69,7 @@ public final class MP3DecoderEventIT {
 
         final File srcDir = new File("src/test/resources/mp3-reference");
         final File destDir =
-            new File("target/integration-results/MP3DecoderEventIT");
+            new File("build/integration-results/MP3DecoderEventIT");
 
         if (!destDir.exists() && !destDir.mkdirs()) {
             fail();

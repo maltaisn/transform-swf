@@ -64,7 +64,7 @@ public final class BMPDecoderIT {
         final File srcDir = new File(
                 "src/test/resources/bmp-reference");
         final File destDir = new File(
-                "target/integration-results/BMPDecoderIT");
+                "build/integration-results/BMPDecoderIT");
 
         if (!destDir.exists() && !destDir.mkdirs()) {
             fail();

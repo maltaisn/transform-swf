@@ -69,7 +69,7 @@ public final class TTFDecoderIT {
 
         final File srcDir = new File("src/test/resources/ttf-reference");
         final File destDir = new File(
-                "target/integration-results/TTFDecoderIT");
+                "build/integration-results/TTFDecoderIT");
 
         if (!destDir.exists() && !destDir.mkdirs()) {
             fail();

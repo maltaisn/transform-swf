@@ -62,7 +62,7 @@ public final class CanvasIT {
         path = new Canvas();
         path.setPixels(true);
 
-        resultDir = new File("target/integration-results/CanvasIT");
+        resultDir = new File("build/integration-results/CanvasIT");
 
         if (!resultDir.exists() && !resultDir.mkdirs()) {
             fail();

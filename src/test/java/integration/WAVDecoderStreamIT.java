@@ -66,7 +66,7 @@ public final class WAVDecoderStreamIT {
 
         final File srcDir = new File("src/test/resources/wav-reference");
         final File destDir = new File(
-                "target/integration-results/WAVDecoderStreamIT");
+                "build/integration-results/WAVDecoderStreamIT");
 
         if (!destDir.exists() && !destDir.mkdirs()) {
             fail();
